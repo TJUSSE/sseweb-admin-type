@@ -1,0 +1,6 @@
+name = SSE Admin Type
+description = Add links of filtering node types into admin menu.
+version = 7.x-0.1
+core = 7.x
+dependencies[] = admin_menu
+package = SSE

@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function sseadmintype_menu() {
+  $types = node_type_get_types();
+  foreach ($types as $type) {
+    $items['admin/content/'.$type->type] = [
+      'title' => '管理'.$type->name,
+      'page callback' => 'drupal_goto',
+      'page arguments' => [
+        'admin/content',
+        [
+          'query' => [
+            'type' => $type->type
+          ]
+        ]
+      ],
+      'access arguments' => ['administer site configuration'],
+      'weight' => 50
+    ];
+  };
+  return $items;
+}
