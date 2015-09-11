@@ -17,7 +17,9 @@ function sseadmintype_menu() {
           ]
         ]
       ],
-      'access arguments' => ['administer site configuration'],
+      'menu name' => 'management',
+      'access callback' => 'node_access',
+      'access arguments' => array('create', $type->type),
       'weight' => 50
     ];
   };
