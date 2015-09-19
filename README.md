@@ -1,4 +1,4 @@
-# sseweb-admin-type
+# sse_admintype
 Add menu link to the admin_menu to filter nodes by its type.
 
 When using `admin_menu`, we cannot simply add our own menu links into the menu list. This is the module for doing such task

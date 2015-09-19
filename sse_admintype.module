@@ -3,7 +3,7 @@
 /**
  * Implements hook_menu().
  */
-function sseadmintype_menu() {
+function sse_admintype_menu() {
   $types = node_type_get_types();
   foreach ($types as $type) {
     $items['admin/content/'.$type->type] = [
